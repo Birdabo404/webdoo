@@ -1,0 +1,20 @@
+body {
+    background-color: floralwhite;
+    margin: 100px 380px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.maintext h1 {
+    font-size: large;
+}
+
+.subtext h1 {
+    font-size: small;
+    color: grey;
+}
