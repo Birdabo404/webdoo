@@ -6,10 +6,14 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
+    column-gap: 10px;
     align-items: flex;
 }
-
+.img img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
 .maintext h2 {
     font-size: large;
     flex-direction: column;
