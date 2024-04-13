@@ -7,11 +7,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-    align-items: center;
+    align-items: flex;
 }
 
-.maintext h1 {
+.maintext h2 {
     font-size: large;
+    flex-direction: column;
+}
+.maintext h1 {
+    font-size: small;
+    color: gray;
 }
 
 .subtext h1 {
