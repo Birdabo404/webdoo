@@ -1,18 +1,20 @@
 body {
     background-color: floralwhite;
-    margin: 100px 380px;
+    margin-left: 400px;
+    margin-top: 60px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 5px;
     align-items: flex;
 }
 .img img {
     width: 180px;
-    height: auto;
+    height: 150px;
     display: block;
+    margin-right: 10px;
+
 }
 .maintext h2 {
     font-size: large;
@@ -23,7 +25,4 @@ body {
     color: gray;
 }
 
-.subtext h1 {
-    font-size: small;
-    color: grey;
 }
