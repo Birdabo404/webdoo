@@ -1,2 +1,2 @@
-# webdoo
-Documenting first web dev dive, I actually have no Idea what to do here.
+## webdoo
+Restarting and Documenting my first dive in Web Development using The Odin Project. 
