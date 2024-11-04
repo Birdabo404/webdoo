@@ -9,7 +9,7 @@ This project helps me improve my HTML skills and gain hands-on experience with c
 
 Here’s the preview image of my HTML projects:
 
-![HTML Preview] (/src/img/2024-11-04T14:50:04,094525852+08:00.png)
+![HTML Preview] (src/img/2024-11-04T14:50:04,094525852+08:00.png)
 ## 🔨 Tools and Technologies
 
 - **HTML**: For structuring content on the web
