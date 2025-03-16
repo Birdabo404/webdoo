@@ -1,10 +1,10 @@
 ## webdoo
-Restarting and Documenting my first dive in Web Development using The Odin Project. 
+Documenting my first dive in web development using The Odin-Project. 
 
 ## HTML Practice
 
-This project helps me improve my HTML skills and gain hands-on experience with creating web content.
-
+This project will help me improve my front end skills and gain hands-on experience with creating web content.
+  
 ## 📸 Preview
 
 Here’s the preview image of my HTML projects:
