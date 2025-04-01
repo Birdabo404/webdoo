@@ -22,10 +22,18 @@
 }
 
 .header1{
-    margin: 30px;
+    margin-left: 30px;
     letter-spacing: 2px;
+    margin-bottom: 0;
 }
 
 .header2{
-    margin: 30px;
+    margin-top: 0px;
+    margin-left: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.Recipes{
+    margin-left: 30px;
 }
