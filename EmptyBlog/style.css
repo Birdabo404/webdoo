@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0); 
+    padding: 1px;
+}
+
+.platform{
+    width: 100%;
+    max-width: 720px;
+    min-height: 830px;
+    background-color: rgb(16, 16, 16);
+    margin: 5px auto 10px;
+    border-radius: 10px;
+}
+
+.header1{
+    font-family: monospace;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 2px;
+    letter-spacing: 2px;
+}
+.header2{
+    color: beige;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+}
+.profile{
+    display: flex;
+    font-family: monospace;
+    color: whitesmoke;
+    padding-left: 150px;
+    margin: 0px auto 0px;
+    gap: 20px;
+}
+
+.profile img{
+    width: 120px;
+    height: 110px;
+    border-radius: 5px;
+}
+
+.profile-info{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header3{
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: monospace;
+    padding-top: 50px;
+    padding-left: 100px;
+    letter-spacing: 2px;
+}
+
+.the-Feeds{
+    padding-top: 40px;
+    color: whitesmoke;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+}
+
+.html{
+    display: flex;
+    color: whitesmoke;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+.html img{
+    width: 200px;
+    height: 180px;
+}
+
+.html-info{
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    gap: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CSS{
+    color: whitesmoke;
+    display: flex;
+    gap: 10px;   
+    padding-bottom: 50px;
+}
+
+.CSS img{
+    width: 180px;
+    height: 180px;
+}
+
+.CSS-Info{
+    margin: 10px;
+    gap: 5px;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+}
+
+.framework{
+    font-family: monospace;
+    display: flex;
+    gap: 20px;
+    letter-spacing: 5px;
+    
+}
+
+.framework img{
+    width: 180px;
+    min-height: 180px;
+}
+
+.framework-info{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
