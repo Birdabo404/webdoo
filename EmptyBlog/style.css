@@ -131,3 +131,11 @@
     display: flex;
     flex-direction: column;
 }
+
+.About{
+    gap: 5px;
+    font-family: monospace;
+    padding-top: 50px;
+    color: whitesmoke;
+    text-align: center;
+}
