@@ -56,16 +56,18 @@
 }
 
 .profile-item p {
+    padding-top: 10px;
     color: beige;
     font-size: 12px;
     letter-spacing: 1px;
     font-family: monospace;
+    align-items: center;
 }
 
 .profile img {
-    width: 120px;
-    height: 110px;
-    border-radius: 3px;
+    width: 150px;
+    height: 150px;
+    border-radius: 300px;
     box-shadow: 
         -5px -5px 10px rgb(22, 22, 22),
         5px 5px 10px rgb(10, 10, 10); 
