@@ -119,6 +119,7 @@
     flex-direction: column;
 }
 
+
 .CSS{
     color: whitesmoke;
     display: flex;
@@ -132,17 +133,19 @@
 }
 
 .CSS-Info{
-    margin: 10px;
-    gap: 5px;
-    display: flex;
+    padding: 10px;
     text-align: justify;
+    font-size: 15px;
+    gap: 5px;
+    padding-top: 10px;
+    display: flex;
     flex-direction: column;
 }
 
 .odin-recipe-project {
     color: whitesmoke;
     display: flex;
-    gap: 25px;   
+    gap: 10px;   
     padding-bottom: 50px;
 }
 
@@ -152,11 +155,13 @@
 }
 
 .odin-Recipe-Info{
-    margin: 5px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
     gap: 5px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    text-align: justify;
 }
 
 .odin-Recipe-Info a {
@@ -167,7 +172,10 @@
     letter-spacing: 2px;
 }
 
-
+.odin-title a {
+    text-decoration: none;
+    color: olive;
+}
 .framework{
     font-family: monospace;
     display: flex;
