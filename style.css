@@ -25,7 +25,6 @@
     font-family: monospace
   }
   
-  /* This makes the list items display side by side */
   .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -36,10 +35,10 @@
   }
   
   .navbar li {
-    display: inline-block; /* This is the key property to display items side by side */
+    display: inline-block; 
   }
   
-  /* Styling for the links */
+
   .navbar a {
     color: white;
     text-decoration: none;
