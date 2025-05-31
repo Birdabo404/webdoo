@@ -40,6 +40,8 @@ submitButton.addEventListener('click', function(){
 
 });
 
+let likePost = [];
+
 //Post container func()
 function displayPosts() {
     // Get the container where posts will go
@@ -47,7 +49,7 @@ function displayPosts() {
     
     // Clear existing posts (so we don't duplicate)
     container.innerHTML = '';
-    
+
     // Loop through each post and create HTML
     allPost.forEach(function(post) {
         // Create HTML for one post
@@ -58,14 +60,13 @@ function displayPosts() {
                     <span class="tracking-wide text-green-200 font-mono text-xs">@${post.author}</span>
                     <span class="text-gray-500 text-xs">${post.timestamp}</span>
                 </div>
-                <p class=" px-2.5 text-green-200 font-mono text-sm mb-3">${post.text}</p>
-                <button class="text-red-400 hover:text-red-300 text-sm" onclick="likePost(${post.id})">
+                <p class="px-11 text-yellow-50 font-mono text-sm mb-3">${post.text}</p>
+                <button class="px-11 py-1 text-red-400 hover:text-red-300 text-sm" onclick="likePost(${post.id})">
                     ❤️ ${post.likes} likes
                 </button>
             </div>
         `;
-        
-        // Add this post to the container
         container.innerHTML += postHTML;
     });
 }
+
