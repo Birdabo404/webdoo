@@ -14,13 +14,16 @@
     </div>
 
     <!-- placeholder for posting -->
-    <div class="post flex items-center gap-4 p-6 rounded-lg border border-b border-r border-l ">
+    <div class="post flex items-start gap-4 p-6 rounded-lg border border-b border-r border-l  ">
         <img class="w-10 h-10 rounded-full object-cover" src="../img/pfp.png" alt="profilePicture">
         <textarea
+            id="postTextArea"
             type="text" 
             placeholder="what's in your mind?" 
-            class="flex-1 bg-transparent text-green-200 font-mono text-sm placeholder-green-400 outline-none pb-1 tracking-wide"></textarea>
-         <button class="bg-gray-800 hover:bg-gray-900 text-white py-3 px-4 rounded-md font-mono text-xs" id="button">submit</button>   
+            class="flex-1 bg-transparent text-green-200 font-mono text-sm placeholder-green-400 outline-none pb-1 tracking-wide overflow-hidden min-h-[24px]"></textarea>
+         <button class="bg-gray-800 hover:bg-gray-900 text-white py-3 px-4 rounded-md font-mono text-xs flex-shrink-0" 
+                id="button">submit</button>   
     </div>
 </body>
+<script src="../Pages/script.js"></script>
 </html>
