@@ -61,6 +61,7 @@ function displayPosts() {
                     <span class="text-gray-500 text-xs">${post.timestamp}</span>
                 </div>
                 <p class="px-11 text-yellow-50 font-mono text-sm mb-3">${post.text}</p>
+                
                 <button class="px-11 py-1 text-red-400 hover:text-red-300 text-sm" onclick="likePost(${post.id})">
                     ❤️ ${post.likes} likes
                 </button>
