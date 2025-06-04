@@ -19,6 +19,7 @@ function createPost(author, text) {
 
         console.log("Post created:", newPost);
         console.log("all Post:", allPost);
+        console.log("all likes:", likePost);
 }
 
 const textArea = document.getElementById('postTextArea');
@@ -42,7 +43,14 @@ submitButton.addEventListener('click', function(){
 
 let likePost = [];
 
-//Post container func()
+const likeCount = 0; 
+const buttonForLikes = document.getElementById('likeButton');
+
+buttonForLikes.addEventListener('click', () => {
+    count++; 
+    console.log(count);
+});
+
 function displayPosts() {
     // Get the container where posts will go
     const container = document.getElementById('postsContainer');
@@ -52,7 +60,6 @@ function displayPosts() {
 
     // Loop through each post and create HTML
     allPost.forEach(function(post) {
-        // Create HTML for one post
         const postHTML = `
             <div class="bg-transparent p-4">
                 <div class="flex items-center gap-3 mb-2">
@@ -62,8 +69,8 @@ function displayPosts() {
                 </div>
                 <p class="px-11 text-yellow-50 font-mono text-sm mb-3">${post.text}</p>
                 
-                <button class="px-11 py-1 text-red-400 hover:text-red-300 text-sm" onclick="likePost(${post.id})">
-                    ❤️ ${post.likes} likes
+                <button id="likeButton" class="px-11 py-1 text-red-400 hover:text-red-300 text-sm" onclick="likePost(${post.id})">
+                    ❤️ ${post.likes}
                 </button>
             </div>
         `;
@@ -71,3 +78,6 @@ function displayPosts() {
     });
 }
 
+const saveToLocalStorage = () => {
+    localStorage.setItem('textArea', textArea.textContent)
+}
