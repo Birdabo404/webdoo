@@ -14,16 +14,19 @@
     </div>
 
     <!-- placeholder for posting -->
-    <div class="post flex items-start gap-4 p-6 rounded-lg border border-b border-r border-l  ">
+    <div class="post flex items-start gap-4 p-6 ">
         <img class="w-10 h-10 rounded-full object-cover" src="../img/pfp.png" alt="profilePicture">
+        
         <textarea
             id="postTextArea"
             type="text" 
             placeholder="what's in your mind?" 
             class="flex-1 bg-transparent text-yellow-100 font-mono text-sm outline-none tracking-wide overflow-hidden min-h-[24px] py-2"></textarea>
          <button class="bg-transparent hover:bg-gray-900 text-white py-3 px-4 rounded-md font-mono text-xs flex-shrink-0 border" 
-                id="button">submit</button>   
+                id="button">Publish</button>
+        </div>
     </div>
+    <!-- Holds all the post -->
     <div id="postsContainer" class="mt-8 space-y-4">
     </div>
 </body>
