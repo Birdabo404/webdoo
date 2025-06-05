@@ -1,83 +1,40 @@
-// Trying out my first js script.
-console.log("hello internet! :)");
-console.log("why are you using inspect element lol.")
+// 1st javascript code
+console.log("hello, Internet!");
 
-let allPost = [];
-//function to create post
-function createPost(author, text) {
-    const postId = Date.now();
+const textArea = document.getElementById('inputTextArea');
+const publishButton = document.getElementById('button');
+const author = 'birdabo';
 
-        const newPost = {
-            id: postId,
-            author: author,
-            text: text, 
-            timestamp: new Date().toLocaleDateString(),
-            likes: 0
-        };
+let allPosts = [];
 
-        allPost.push(newPost);
+function createPosts() {
+    let postId = Date.now();
 
-        console.log("Post created:", newPost);
-        console.log("all Post:", allPost);
-        console.log("all likes:", likePost);
+    const newPost = {
+        id: postId,
+        author: author,
+        text: text,
+        timeStamp: new Date().toLocaleDateString(),
+        delete: button
+    }
+
+    allPosts.push(newPost);
+
+    console.log("Post created:", newPost);
+    console.log("All Posts:", allPosts);
 }
 
-const textArea = document.getElementById('postTextArea');
-const submitButton = document.getElementById('button');
+publishButton.addEventListener('click', function(){
+    const postsText = textArea.value; 
 
-submitButton.addEventListener('click', function(){
-    const postText = textArea.value;
-
-    if(postText.trim() === '') { //check if post is empty
-        alert('Please write something.');
+    if (postsText.trim() === ''){
+        alert('the posts is empty. write something!');
         return;
     }
 
-    createPost('Anonymous', postText);
-
+    createPosts('anonymous', postsText);
     textArea.value = '';
-    displayPosts();
-    console.log('Post has been submitted!');
+
+    console.log('Post has been published!');
 
 });
-
-let likePost = [];
-
-const likeCount = 0; 
-const buttonForLikes = document.getElementById('likeButton');
-
-buttonForLikes.addEventListener('click', () => {
-    count++; 
-    console.log(count);
-});
-
-function displayPosts() {
-    // Get the container where posts will go
-    const container = document.getElementById('postsContainer');
-    
-    // Clear existing posts (so we don't duplicate)
-    container.innerHTML = '';
-
-    // Loop through each post and create HTML
-    allPost.forEach(function(post) {
-        const postHTML = `
-            <div class="bg-transparent p-4">
-                <div class="flex items-center gap-3 mb-2">
-                        <img class="w-8 h-8 rounded-full object-cover" src="../img/pfp.png" alt="profilePicture">
-                    <span class="tracking-wide text-green-200 font-mono text-xs">@${post.author}</span>
-                    <span class="text-gray-500 text-xs">${post.timestamp}</span>
-                </div>
-                <p class="px-11 text-yellow-50 font-mono text-sm mb-3">${post.text}</p>
-                
-                <button id="likeButton" class="px-11 py-1 text-red-400 hover:text-red-300 text-sm" onclick="likePost(${post.id})">
-                    ❤️ ${post.likes}
-                </button>
-            </div>
-        `;
-        container.innerHTML += postHTML;
-    });
-}
-
-const saveToLocalStorage = () => {
-    localStorage.setItem('textArea', textArea.textContent)
-}
